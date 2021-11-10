@@ -14,9 +14,44 @@ body {
     font-family: sans-serif;
 }
 
+.container {
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
+}
 /* ==================================
-  Common Css
+  HEADER STYLE
 =====================================*/
-/* ==================================
-  Common Css
-=====================================*/
+
+header {
+    background-color: #1f2937;
+}
+
+.header-container {
+    display: flex;
+    color: #f9faf8;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    font-size: 24px;
+    flex: 1 1 250px;
+}
+
+.header-right {
+    flex: 2 1 400px;
+}
+
+.header-right ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.header-right ul a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
