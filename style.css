@@ -1,25 +1,27 @@
 /* ==================================
   Common Css
 =====================================*/
+/* Importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 *::before,
 *::after,
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 18px;
-    color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #e5e5e5;
 }
 
 .container {
-    max-width: 1240px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* ==================================
@@ -28,20 +30,20 @@ body {
 
 /* Button design */
 .btn {
-    padding: 10px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 0.4s;
+  padding: 10px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
 }
 
 .primary {
-    background-color: #3882f6;
-    color: #f9faf8;
+  background-color: #3882f6;
+  color: #f9faf8;
 }
 
 .btn:hover {
-    background-color: #2767ce;
+  background-color: #2767ce;
 }
 
 /* ==================================
@@ -49,36 +51,37 @@ body {
 =====================================*/
 
 header {
-    background-color: #0e0f0f;
+  background-color: #0e0f0f;
 }
 
 .header-container {
-    display: flex;
-    color: #f9faf8;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  color: #f9faf8;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-left {
-    font-size: 24px;
-    flex: 1 0 250px;
+  font-size: 28px;
+  flex: 1 0 250px;
+  font-weight: 700;
 }
 
 .header-right {
-    flex: 2 0 400px;
+  flex: 2 0 400px;
 }
 
 .header-right ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
 }
 
 .header-right ul a {
-    color: #e5e7eb;
-    text-decoration: none;
+  color: #e5e7eb;
+  text-decoration: none;
 }
 
 /* ==================================
@@ -86,42 +89,47 @@ header {
 =====================================*/
 
 #hero-area {
-    background-color: #0e0f0f;
+  background-color: #0e0f0f;
 }
 .hero-container {
-    display: flex;
-    padding-top: 40px;
-    padding-bottom: 80px;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
+  display: flex;
+  padding: 120px 0 140px 0;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .section-title {
-    flex: 1 450px;
+  flex: 1 450px;
 }
 
 .section-title h1 {
-    color: #f9faf8;
-    font-size: 49px;
-    font-weight: bolder;
+  color: #f9faf8;
+  font-size: 49px;
+  font-weight: 700;
+  margin-bottom: 28px;
 }
 
 .section-title p {
-    margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .section-image {
-    /* nothing is here */
-    flex: 2 0 450px;
+  overflow: hidden;
+  border-radius: 3px;
+  flex: 2 450px;
+  height: 250px;
 }
+
 .place-holder-img {
-    width: 100%;
-    height: 250px;
-    background-color: #778899;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* placeholder style should be deleted before inserting image */
+  width: 100%;
+  height: 100%;
+  background-color: #778899;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ==================================
@@ -129,66 +137,72 @@ header {
 =====================================*/
 
 .service-container {
-    padding: 80px 0;
+  padding: 120px 0;
 }
 
 .service-heading {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1f2937;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
 }
 .service-box {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .service-item {
-    /* border: 1px solid red; */
-    flex: 0 0 200px;
-    text-align: center;
+  flex: 0 0 200px;
+  text-align: center;
 }
 .service-image {
-    width: 100%;
-    height: 200px;
-    /* background-color: lightslategray; */
-    border: 3px solid #3882f6;
-    border-radius: 8px;
-    margin-bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border: 3px solid #3882f6;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+  /* Img place holder style, style should be deleted before inserting image */
+  background-color: lightslategray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .service-text {
-    color: #778899;
-    font-size: 16px;
+  color: #778899;
+  font-size: 18px;
 }
 
 /* ==================================
   TESTIMONIAL AREA STYLE
 =====================================*/
 #testimonial {
-    background-color: #e5e7eb;
-    padding: 80px 0 60px 0;
+  background-color: #e5e7eb;
+  padding: 120px 0;
 }
 .testimonial-container {
 }
 
 .quote-box {
-    max-width: 800px;
-    width: 70%;
-    margin: 0 auto;
+  max-width: 800px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .quote-text {
-    font-size: 26px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    color: #1f2937;
-    font-style: italic;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #1f2937;
+  font-style: italic;
 }
 .quote-author {
-    text-align: right;
-    font-size: 18px;
-    color: #1f2937;
+  text-align: right;
+  font-size: 18px;
+  color: #1f2937;
 }
 
 /* ==================================
@@ -198,24 +212,25 @@ header {
 #call-to-action {
 }
 .cta-container {
-    padding: 80px 0;
+  padding: 120px 0;
 }
 .cta-box {
-    padding: 40px 0;
-    background-color: #3882f6;
-    border-radius: 8px;
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    align-items: flex-end;
+  padding: 40px 0;
+  background-color: #3882f6;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 .cta-left {
-    /* Nothing is here */
+  /* Nothing is here */
 }
 .cta-title {
-    font-size: 24px;
-    color: #f9faf8;
-    /* font-weight: bold; */
+  font-size: 24px;
+  color: #f9faf8;
+  /* font-weight: bold; */
 }
 .cta-dis {
 }
@@ -223,16 +238,16 @@ header {
 }
 
 .cta-right button {
-    border: 2px solid #e5e7eb;
+  border: 2px solid #e5e7eb;
 }
 
 /* ==================================
   FOOTER STYLE
 =====================================*/
 #footer {
-    background-color: #0e0f0f;
+  background-color: #0e0f0f;
 }
 .footer-container {
-    text-align: center;
-    padding: 30px 0;
+  text-align: center;
+  padding: 30px 0;
 }
