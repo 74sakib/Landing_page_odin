@@ -1,6 +1,22 @@
-# Landing_page_TOP
-This is a one page landing page. it's a practice project on the odin project.
+# LANDING PAGE
 
-Live link - https://shakib1010.github.io/landing-page-top/
+## Overview
 
-Author: Shakibul Islam
+It's a landing page to practice HTML, CSS SKILLS.
+
+
+### Links
+
+- Live Site URL: https://shakib97itis.github.io/landing-page-top/
+
+
+## My process
+
+### Built with
+
+- HTML, CSS
+
+## Author
+
+- Github Profile - [Shakibul Islam](https://github.com/shakib97itis)
+- Linkedin Profile - [Shakibul Islam](https://www.linkedin.com/in/shakib97itis/)
